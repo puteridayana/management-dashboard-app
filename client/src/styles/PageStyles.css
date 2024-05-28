@@ -1,0 +1,198 @@
+.table-responsive {
+  margin-top: 25px;
+}
+
+.table-container {
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  width :100%;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+
+table thead th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
+}
+
+th {
+  background-color: rgb(0, 7, 61);
+  color: white;
+  font-size: 13px;
+}
+
+/* Define colors for odd and even rows */
+.table-container-b table tr:nth-child(odd) td {
+  background-color: #7b7878; /* Light gray for odd rows */
+}
+
+.table-container-b table tr:nth-child(even) td {
+  background-color: #ffffff; /* White for even rows */
+}
+
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(122, 10, 10);
+  color: #130303;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.loader {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+.post-detail-container {
+  margin: 20px;
+}
+
+.post-details {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.post-details h1 {
+  margin-bottom: 10px;
+}
+
+.post-details p {
+  margin-bottom: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination li a {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination li a:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination .active a {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.form-control{
+  width: 10px;
+  font-size: 8px;
+}
+
+.search-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+}
+
+/* Dashboard.css */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.metric-card {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recent-transactions {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+  margin-bottom: 10px;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.dashboard-section {
+  flex: 1 1 calc(33.333% - 20px); /* Three sections per row with a gap */
+  min-width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #c2def9;
+}
+
+.metric-card,.list-group, .recent-transactions, .form-control {
+  background-color: #dbe9f6
+}
+
+.post-details, .user-details-table {
+  background-color: #dbe9f6
+}
